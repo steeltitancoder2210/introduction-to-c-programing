@@ -1,0 +1,15 @@
+#include<stdio.h>
+void reverseInput();
+
+int main () {
+  reverseInput();
+  return 0;
+}
+
+void reverseInput() {
+  char c;
+  if (scanf("%c",&c)!=EOF) {
+    reverseInput();
+    printf("%c", c);
+  }
+}
